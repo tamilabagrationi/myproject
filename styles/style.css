@@ -1,0 +1,37 @@
+header{
+    background-color: aqua;
+}
+
+.header-wraper{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+ul{
+    display: flex;
+}
+
+
+li{
+    margin-right: 25px;
+}
+
+.burger{
+    position: relative;
+    display: none;
+
+}
+
+.fa-bars, .fa-times{
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+
+
