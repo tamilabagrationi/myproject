@@ -1,16 +1,18 @@
 header{
-    background-color: aqua;
+       background-color: aqua;
 }
 
 .header-wraper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: 1000px;
+    font-size: 20px;
 }
 
 .logo{
     width: 50px;
-    height: 50px;
+    
 }
 
 ul{
@@ -19,7 +21,12 @@ ul{
 
 
 li{
-    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+
+a { 
+    text-decoration: none;
 }
 
 .burger{
