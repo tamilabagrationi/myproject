@@ -8,10 +8,12 @@ header{
     align-items: center;
     width: 1000px;
     font-size: 20px;
+    
 }
 
 .logo{
     width: 50px;
+    height: 50px;
     
 }
 
@@ -29,15 +31,16 @@ a {
     text-decoration: none;
 }
 
-.burger{
-    position: relative;
+/* .burger{
+    
     display: none;
 
-}
+   
+} */
 
 .fa-bars, .fa-times{
     position: relative;
-    top: 20px;
+    top: 10px;
     right: 10px;
 }
 
