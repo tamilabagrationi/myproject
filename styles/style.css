@@ -45,9 +45,9 @@ a {
    
 }
 
-/* a:hover{
+a:hover{
   color: blue;
-} */
+} 
 
 .burger{
     position: relative;    
@@ -166,6 +166,8 @@ a {
 
       .about{
         background:rgb(221, 123, 208);
+        position: relative;
+        top: 60px;
     
     }
     .about .row{
@@ -178,11 +180,13 @@ a {
     }
     
     .about .row .image img{
-        width: 80%;
+        width: 70%;
         margin-left: 40px;
     }
+
     .about .row .content{
         padding:20px;
+        
     }
     
     .about .row .content h3{
@@ -192,6 +196,7 @@ a {
         font-family: 'Italianno', cursive;
        
     }
+
     .about .row .content p {
         width: 1000px;
     }
@@ -244,6 +249,70 @@ a {
       height: 300px;
       opacity: 0,2;
     }
+
+    .sakontacto {
+      position: relative;
+      top: 20px;
+      max-width: 1600px;
+      width: 100%;
+      height: 80px;
+      background-color: rgb(55, 224, 142);
+      margin-top: 20px;
+      
+      padding: 20px;
+      bottom: 10px; 
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  .icons {
+      
+      font-size: 30px; 
+      color: rgba(244, 76, 57, 0.503);
+      display: flex;
+      gap: 10px;
+  }
+  .icons :hover {
+      color: rgb(2, 13, 43);
+  }
+  .line-line {
+      width: 4px;
+      height: 30px;
+      background-color:rgba(244, 76, 57, 0.503); 
+  }
+  .fa-youtube {
+      color: rgba(227, 14, 14, 0.877);
+      font-size: 24px;
+  }
+  .fa-facebook {
+      color: blue;
+      font-size: 24px;
+  }
+
+
+  .div-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 30px;
+    font-weight: bold;
+    gap: 30px;
+    background-color: rgb(238, 215, 235);
+}
+.div-contact h2 {
+    font-family: 'BPG WEB 002 Caps';
+    font-size: 24px;
+    color: rgb(232, 232, 238);
+}
+.div-li {
+    margin-top: 100px;
+    padding-top: 10px;
+    color: rgb(12, 27, 6);
+
+}
+  
+    
      
 
 
