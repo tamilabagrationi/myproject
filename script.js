@@ -25,7 +25,7 @@ let data = [
     {
         id: 2,
         title:'School alley',
-        imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.yMSJfLrgunCHat-A_QlLUwHaFj&pid=Api&P=0&h=220',
+        imageUrl: 'https://salibauri2.edu.ge/cache/widgetkit/gallery/1/544e8f8950b34-b5b9104b2e.jpg',
         
     },
     {
@@ -65,7 +65,6 @@ function createH2tag(item){
 }
 
 
-
 function setSlider(){
     sliderContainer.innerText=''
      createImg(data[sliderIndex])
@@ -75,6 +74,7 @@ function setSlider(){
     sliderContainer.appendChild(title)
     sliderContainer.appendChild(dots)
     let dotElements = dots.querySelectorAll('.dot')
+
     dotElements[sliderIndex].classList.add('active') 
 }
 
@@ -98,9 +98,9 @@ function arrowRight(){
 arrowLeftBtn.addEventListener('click',arrowLeft)
 arrowRightBtn.addEventListener('click',arrowRight)
 
-// setInterval(()=>{
-//     arrowRight()
-// },2000)
+  setInterval(()=>{
+    arrowRight()
+   },3000)
 
 function createDots(){
     let dots =document.createElement('div')
@@ -109,6 +109,7 @@ function createDots(){
         let dot = document.createElement('div')
         dot.classList.add('dot')
         dot.setAttribute('data-id',element.id-1)
+        
         dot.onclick= function(event){
            let id = event.target.getAttribute('data-id')
            sliderIndex = id
