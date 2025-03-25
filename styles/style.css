@@ -315,9 +315,9 @@ a:hover{
 .acrd {
   /* margin: 20px; */
   position: relative;
-        top: 60px;
+  margin-top: 65px;
+  }
   
-}
 
 .acordion {
   max-width: 1400px;
@@ -358,7 +358,7 @@ a:hover{
   font-size: 25px;
 }
  .acordion h2 {
-  font-size: 30px;
+  font-size: 27px;
   padding-top: 80px;
 }
  .last {
@@ -388,21 +388,44 @@ a:hover{
   font-size: 25px;
 }
   
-    
-     
-/* .review{
-  background:rgb(221, 178, 123);
-  margin-bottom:30px;
-  height: 500px;
-  align-items: center;
-}
-.reviewTitle{
-  font-size: 50px;
-  color: #5f3512;
-  margin-top: 70px;
-  margin-bottom: 60px;
-  margin-left: 100px;
-  margin-left: 100px;
-  font-family: 'Italianno', cursive;
+.container {
+  max-width: 100%;
+  width: 100%;
+  background-color: rgb(215, 215, 233);
+  display: flex;
+  justify-content: center;
 }
 
+#ul_list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.personali {
+  padding: 20px;
+  background-color: rgb(215, 215, 233);
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#loadprev,
+#loadnext {
+font-family:'Roboto Condensed';
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(16, 15, 15);
+  margin: 19px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+  
+     
