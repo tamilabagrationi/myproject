@@ -313,7 +313,10 @@ a:hover{
 }
  
 .acrd {
-  margin: 20px;
+  /* margin: 20px; */
+  position: relative;
+        top: 60px;
+  
 }
 
 .acordion {
