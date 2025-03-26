@@ -1,0 +1,66 @@
+
+
+document.getElementById('registration').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    let errors = {}; 
+    let form = event.target; 
+
+    
+    form.querySelectorAll('.errorText').forEach(item => {
+        item.textContent = '';
+    });
+
+   
+    let userName = document.getElementById('username').value.trim();
+    if (userName.length < 2) {
+        errors.username = "დაწერეთ მომხმარებლის სახელი";
+    }
+
+    
+    let lastName = document.getElementById('lastname').value.trim();
+    if (lastName.length < 3) {
+        errors.lastname = "დაწერეთ მომხმარებლის გვარი";
+    }
+
+    
+    let password = document.getElementById('password').value;
+    let password2 = document.getElementById('password2').value;
+    if (password.length < 6) {
+        errors.password = "პაროლი უნდა იყოს მინიმუმ 6 სიმბოლო!";
+    }
+    if (password !== password2) {
+        errors.password2 = "პაროლები არ ემთხვევა!";
+    }
+
+    
+    let agree = document.getElementById('checkAgree').checked;
+    if (!agree) {
+        errors.agree = 'აუცილებელია დათანხმება!';
+    }
+
+    
+    let age = false;
+    form.querySelectorAll('[name="age"]').forEach(element => {
+        if (element.checked) {
+            age = true;
+        }
+    });
+    if (!age) {
+        errors.age = "გთხოვთ აირჩიოთ ერთ-ერთი";
+    }
+
+    
+    for (let item in errors) {
+        let errorSpan = document.getElementById('error_' + item);
+        if (errorSpan) {
+            errorSpan.textContent = errors[item];
+        }
+    }
+
+    
+    if (Object.keys(errors).length === 0) {
+        form.submit();
+
+    }
+});

@@ -22,6 +22,8 @@
     <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
    
     <script src="./script.js" defer></script>
+    <script src="./contact.js" defer></script>
+   
      
 
     <title>myproject/git</title>
@@ -73,7 +75,46 @@
           " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
+
+        <section class="forma"> 
         
+          <form action="" method="POST" id="registration">
+              <div>
+                  <input type="text" name="username" id="username" placeholder="სახელი">
+                  <span class="errorText" id="error_username"></span>
+              </div>
+              <div>
+                  <input type="text" name="lastname" id="lastname" placeholder="გვარი">
+                  <span class="errorText" id="error_lastname"></span>
+              </div>
+              <div>
+                  <input type="password" name="password" id="password" placeholder="ჩაწერე პაროლი">
+                  <span class="errorText" id="error_password"></span>
+              </div>
+              <div>
+                  <input type="password" name="password2"  id="password2" placeholder="გაიმეორე პაროლი">
+                  <span class="errorText" id="error_password2"></span>
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="age" id="age1">
+                <label for="age1">I-VI</label>
+                <input type="radio" name="age" id="age2">
+                <label for="age2">VII-X</label>
+                <input type="radio" name="age" id="age3">
+                <label for="age3">XI-XII</label>
+                <span class="errorText" id="error_age"></span>
+
+              </div>
+
+              
+              <div>
+                  <input type="checkbox" name="agree" id="checkAgree">
+                  <span class="errorText" id="error_agree"></span>
+              </div>
+              <button type="submit">დააკლიკე</button>
+              
+          </form>
+      </section>
 
             
     </main>
@@ -82,32 +123,35 @@
     <footer>
 
         <div class="sakontacto">
-            <div class="icons-top">
-                <i class='far fa-copyright'></i>
-                <i class='fas fa-wifi'></i>
-            </div>
-            <b>საკონტაქტო ინფორმაცია:</b>
-            <ul>
-                <li><span>ელ. ფოსტა:</span>
-                <a href="mailto:mail@gmail.com?subject=The%20subject%20of%20the%20mail">mail@gmail.com</a>
-                </li>
-            </ul>
-            <ul> 
-                <li>
-                <span>ტელეფონი:</span>
-                <a href="tel: 577 30 45 22">  +995 577 30 45 30</a>
-                </li>
-            </ul>
-        
-            
-            <div class="icons">
-                <a href="https://www.facebook.com/groups/137723367" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <div class="line-line"></div>
-                <i class="fa-brands fa-instagram"></i>
-                <div class="line-line"></div>
-                <a href="https://www.youtube.com/watch?v=rg-N6xDO19E" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+        <b>საკონტაქტო ინფორმაცია:</b>
+        <ul>
+          <li>
+            <span>ელ. ფოსტა:</span>
+            <a
+              href="mailto:mail@gmail.com?subject=The%20subject%20of%20the%20mail"
+              >mail@gmail.com</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>ტელეფონი:</span>
+            <a href="tel:+4733378901">+577304522</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <a href="https://www.facebook.com/groups/137723367" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <div class="line-line"></div>
+          <i class="fa-brands fa-instagram"></i>
+          <div class="line-line"></div>
+          <a href="https://www.youtube.com/watch?v=rg-N6xDO19E" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </div>
+      </div>
 
 
            
